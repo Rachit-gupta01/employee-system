@@ -1,4 +1,62 @@
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: 'Segoe UI', sans-serif; background: #0f172a; color: #f1f5f9; }
-input:focus { outline: 2px solid #3b82f6; }
-button:hover { opacity: 0.9; }
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #f4f7fb, #eef2ff);
+  color: #1e293b;
+  min-height: 100vh;
+}
+
+/* Inputs */
+input,
+textarea,
+select {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #dbe4f0;
+  transition: 0.3s;
+  font-size: 14px;
+  background: #ffffff;
+  color: #1e293b;
+}
+
+/* Input Focus */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 6px rgba(79, 70, 229, 0.2);
+}
+
+/* Buttons */
+button {
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+/* Button Hover */
+button:hover {
+  opacity: 0.95;
+  transform: translateY(-1px);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #edf2f7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #bfc8d6;
+  border-radius: 4px;
+}
