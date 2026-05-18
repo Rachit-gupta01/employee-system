@@ -8,22 +8,25 @@
 /* Body */
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to right, #f4f7fb, #eef2ff);
+  background: linear-gradient(135deg, #dbeafe, #eef2ff, #f8fafc);
   color: #1e293b;
   min-height: 100vh;
+  line-height: 1.5;
 }
 
 /* Inputs */
 input,
 textarea,
 select {
-  padding: 10px;
-  border-radius: 10px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
   border: 1px solid #dbe4f0;
-  transition: 0.3s;
+  transition: 0.3s ease;
   font-size: 14px;
   background: #ffffff;
   color: #1e293b;
+  margin-top: 6px;
 }
 
 /* Input Focus */
@@ -32,24 +35,55 @@ textarea:focus,
 select:focus {
   outline: none;
   border-color: #4f46e5;
-  box-shadow: 0 0 6px rgba(79, 70, 229, 0.2);
+  box-shadow: 0 0 8px rgba(79, 70, 229, 0.2);
+}
+
+/* Placeholder */
+input::placeholder,
+textarea::placeholder {
+  color: #94a3b8;
 }
 
 /* Buttons */
 button {
   transition: 0.3s ease;
   cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 20px;
+  background: linear-gradient(to right, #4f46e5, #6366f1);
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(79,70,229,0.2);
 }
 
 /* Button Hover */
 button:hover {
-  opacity: 0.95;
-  transform: translateY(-1px);
+  opacity: 0.96;
+  transform: translateY(-2px);
+}
+
+/* Cards */
+.card {
+  background: rgba(255,255,255,0.9);
+  padding: 22px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  backdrop-filter: blur(6px);
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+  color: #334155;
+  margin-bottom: 10px;
 }
 
 /* Scrollbar */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 7px;
 }
 
 ::-webkit-scrollbar-track {
@@ -58,5 +92,5 @@ button:hover {
 
 ::-webkit-scrollbar-thumb {
   background: #bfc8d6;
-  border-radius: 4px;
+  border-radius: 10px;
 }
